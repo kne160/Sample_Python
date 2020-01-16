@@ -2,4 +2,5 @@ Cat
 Dog
 Sun
 Kun
+Foo
 Temple
