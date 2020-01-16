@@ -15,7 +15,7 @@ class Student(Person):
         self.id = id
 
 person = Person('I am a person')
-student = Student('I am a student', 777)
+student = Student('I am a student', 7)
 
 print(person.name)
 print(student.name, student.id)
