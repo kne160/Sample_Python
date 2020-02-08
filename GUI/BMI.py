@@ -1,5 +1,5 @@
 '''
-Sample Tk cal BMI
+Sample Tk cal BMI add
 '''
 
 import tkinter as tk
