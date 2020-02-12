@@ -26,7 +26,7 @@ label2 = tk.Label(frm2, text="身長")
 label2.configure(bg='white')
 label2.grid(row=0, column=0)
 
-entry1 = tk.Engry(frm2)
+entry1 = tk.Entry(frm2)
 entry1.grid(row=0, column=1)
 
 label3 = tk.Label(frm2, text="体重")
@@ -44,11 +44,11 @@ def doAction():
     w = int((height/100)**2 * 22 * 10)/10
     if bmi < 18.5:
         cmt = '痩せすぎです'
-    elif bmi < 25:
+    elif bmi > 25:
         cmt = '太り過ぎです'
-    val.set(str(bmi) + cmt + '\r(適正:' + str(w) + 'Kg)')
+    val.set(str(bmi) + " " + cmt + '\r(適正:' + str(w) + 'Kg)')
 
-button1 = tk.Button(frm, text='Calculate', command=doAction())
+button1 = tk.Button(frm, text='Calculate', command=doAction)
 button1.configure(bg='white')
 button1.pack(expand=True, fill=tk.X, padx=10, pady=10)
 
